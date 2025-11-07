@@ -1,258 +1,231 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>MY PORTFOLIO</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Style.css">
+  <title>MY PORTFOLIO</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="Style.css">
 
-    <!-- 📱 Added Internal Styling Only for Mobile Display -->
-    <style>
-        @media screen and (max-width: 768px) {
-            body {
-                padding: 0;
-                margin: 0;
-                overflow-x: hidden;
-            }
+  <style>
+    /* ---- Internal styling only for phone display ---- */
+    @media (max-width: 768px) {
+      body {
+        padding: 10px;
+        overflow-x: hidden;
+      }
 
-            #disc {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
+      #disc {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
 
-            .pro {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 8px;
-                margin-top: 10px;
-            }
+      .pro {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+      }
 
-            .disc {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-                padding: 10px;
-            }
+      .btn {
+        padding: 8px 10px;
+        font-size: 14px;
+      }
 
-            .circle-img {
-                width: 180px;
-                height: 180px;
-                border-radius: 50%;
-                margin-top: 15px;
-            }
+      .disc, .discs, .skills-container, .col {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
 
-            .apps {
-                width: 30px;
-                height: 30px;
-                margin: 5px;
-            }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
 
-            .discs {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-                padding: 10px;
-            }
+      .circle-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin: 10px auto;
+        display: block;
+      }
 
-            .first {
-                width: 90%;
-                text-align: center;
-            }
+      .first {
+        padding: 0 10px;
+        text-align: left;
+      }
 
-            .skills-container {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
+      .skills-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
 
-            .skills-content, .skills-logo {
-                width: 90%;
-                text-align: center;
-            }
+      .skills-logo img,
+      .logo, .logoo {
+        width: 60px;
+        height: auto;
+        margin: 5px;
+      }
 
-            .logo, .logoo {
-                width: 50px;
-                height: 50px;
-            }
+      .vs, .edu, .im, .imgs {
+        max-width: 90%;
+        height: auto;
+        margin: 10px auto;
+        display: block;
+      }
 
-            .vs {
-                width: 80px;
-                height: 80px;
-                margin: 10px auto;
-                display: block;
-            }
+      p {
+        margin: 10px;
+        line-height: 1.4;
+        font-size: 15px;
+      }
 
-            .edu {
-                width: 150px;
-                height: 150px;
-                display: block;
-                margin: 0 auto;
-            }
+      footer {
+        text-align: center;
+        padding: 15px;
+        background-color: lightgrey;
+      }
 
-            p {
-                font-size: 14px;
-                line-height: 1.4;
-            }
-
-            h1, h2, h3, h4, h5 {
-                text-align: center;
-            }
-
-            footer {
-                text-align: center;
-                padding: 15px;
-            }
-
-            footer h4 {
-                font-size: 14px;
-                line-height: 1.4;
-            }
-        }
-
-        @media screen and (max-width: 480px) {
-            .btn {
-                padding: 6px 10px;
-                font-size: 13px;
-            }
-
-            .circle-img {
-                width: 150px;
-                height: 150px;
-            }
-
-            p {
-                font-size: 13px;
-            }
-
-            h2, h3 {
-                font-size: 16px;
-            }
-        }
-    </style>
+      footer h2, footer h4 {
+        margin: 5px 0;
+      }
+    }
+  </style>
 </head>
+
 <body style="background-color: rgb(7, 154, 246);">
-    <div id="disc">
-        <div>
-            <h2 style="color: darkblue;">My Portfolio</h2>
-        </div>
-        <div class="pro">
-            <a href="index.html"><button class="btn"><b>Home</b></button></a>
-            <a href="About.html"><button class="btn"><b>About</b></button></a>
-            <a href="Skills.html"><button class="btn"><b>Skills</b></button></a>
-            <a href="Projects.html"><button class="btn"><b>Projects</b></button></a>
-            <a href="Education.html"><button class="btn"><b>Education</b></button></a>
-            <a href="Contact.html"><button class="btn"><b>Contact</b></button></a>
-        </div>
+  <div id="disc">
+    <div>
+      <h2 style="color: darkblue">My Portfolio</h2>
     </div>
-
-    <div class="disc">
-        <div class="pro1">
-            <h1>Hello ,</h1>
-            <h2>I'am <span class="pro2">Dhoni Nayak</span> ,</h2>
-            <h3 style="background-color: yellow; display: inline;">Web Developer</h3>
-            <p class="passage">Skilled in Java, MySQL, AWS, and DevOps with a passion for problem-solving.
-                Tech enthusiast with skills in cloud computing, database management, and web development.
-            </p>
-            <h5>Social Media :</h5>
-            <a href="https://www.facebook.com"><img src="fac.jpeg" class="apps"></a>
-            <a href="https://www.instagram.com"><img src="in.svg" class="apps"></a>
-            <a href="https://www.linkedin.com"><img src="link.webp" class="apps"></a>
-            <a href="https://www.twitter.com"><img src="x.png" class="apps"></a>
-            <a href="https://www.youtube.com"><img src="youtube.png" class="apps"></a>
-            <a href="https://www.telegram.com"><img src="teli.webp" class="apps"></a>
-        </div>
-        <div>
-            <img src="Dhoni.jpg" alt="Dhoni" class="circle-img">
-        </div>
+    <div class="pro">
+      <a href="index.html"><button class="btn"><b>Home</b></button></a>
+      <a href="About.html"><button class="btn"><b>About</b></button></a>
+      <a href="Skills.html"><button class="btn"><b>Skills</b></button></a>
+      <a href="Projects.html"><button class="btn"><b>Projects</b></button></a>
+      <a href="Education.html"><button class="btn"><b>Education</b></button></a>
+      <a href="Contact.html"><button class="btn"><b>Contact</b></button></a>
     </div>
+  </div>
 
-    <h1 style="text-align: center; background-color: lightgrey;"> <b>About Me </b></h1>
-    <div class="discs">
-        <div>
-            <img src="mypic.jpg" width="250" height="350">
-        </div>
-        <div class="first">
-            <h2 style="background-color: yellow; display : inline">SELF INTRODUCTION :</h2>
-            <p>My Name is Seravath Dhoni Nayak I am From Wanaparthy District And I am Currently Studying Diploma 5th semester in Computer Science Engineering At Jaya Prakash Narayana Collage Of Engineering in Mahabubnagar. My Hobbies Are Playing games , Listening Songs , Watching Movies and Reading Books etc..,</p>
-            <h2 style="background-color: yellow; display : inline">INSTRESTED ACTIVITIES :</h2>
-            <p>I have Intrested In Programming Languages Like C , C++ , JAVA , Python and Web Technogologies.
-                Other Circular Activities such as Painting , Games ( Outdoor games Like Kabaddi , Cricket , FootBall etc..,).</p>
-        </div>  
+  <div class="disc">
+    <div class="pro1">
+      <h1>Hello ,</h1>
+      <h2>I'am <span class="pro2">Dhoni Nayak</span> ,</h2>
+      <h3 style="background-color: yellow; display: inline;">Web Developer</h3>
+      <p class="passage">Skilled in Java, MySQL, AWS, and DevOps with a passion for problem-solving.
+        Tech enthusiast with skills in cloud computing, database management, and web development.
+      </p>
+      <h5>Social Media :</h5>
+      <a href="https://www.facebook.com"><img src="fac.jpeg" class="apps"></a>
+      <a href="https://www.instagram.com"><img src="in.svg" class="apps"></a>
+      <a href="https://www.linkedin.com"><img src="link.webp" class="apps"></a>
+      <a href="https://www.twitter.com"><img src="x.png" class="apps"></a>
+      <a href="https://www.youtube.com"><img src="youtube.png" class="apps"></a>
+      <a href="https://www.telegram.com"><img src="teli.webp" class="apps"></a>
     </div>
-
-    <h1 style="text-align: center; background-color: lightgrey;">Skills</h1>
-    <div class="skills-container">
-        <div class="skills-content">
-            <h2 style="color: black; background-color: grey; display: inline;">Programming Languages :</h2>
-            <p>I have Knownledge on Programming Languages Like C , C++ , Java , HTML , CSS and MySQL.</p>
-            <img src="c.png" alt="C" class="logo">
-            <img src="ja-removebg-preview.png" alt="C++" class="logoo">
-            <img src="java-removebg-preview.png" alt="JAVA" class="logo">
-            <img src="html.png" alt="HTML" class="logo">
-            <img src="css.svg" alt="CSS" class="logo">
-            <img src="mysql-removebg-preview.png" alt="MySQL" class="logo">
-            <div style="color:black;">
-                <h2 style="background-color:grey; display:inline;">Tools & Platforms :</h2>
-            </div>
-            <p>I have worked With Git , VS CODE ,Apache Tomcat.</p>
-            <img src="git.png" alt="Git" class="logo">
-            <img src="vs.png" alt="VS CODE" class="logo">
-            <img src="apache.png" alt="Apache Tomcat" class="logo">
-            <div style="color:black;">
-                <h2 style="background-color:grey; display:inline;">Other Skills :</h2>
-            </div>
-            <p>problem-solving , Teamwork, adaptability</p>
-            <img src="ps.png" alt="problem-solving" class="logo">
-            <img src="team-removebg-preview.png" alt="teamwork" class="logo">
-            <img src="adp.png" alt="adaptability" class="logo">
-        </div>
-        <div class="skills-logo">
-            <img src="bus-removebg-preview.png" alt="skills" class="logos">
-        </div>
+    <div>
+      <img src="Dhoni.jpg" alt="Dhoni" class="circle-img">
     </div>
+  </div>
 
-    <h1 style="text-align: center; background-color: lightgrey;">Projects</h1>
-    <div style="display: flex; margin-left: 400px; flex-wrap: wrap; justify-content: center;">
-        <img src="4399c257-2647-447b-a65a-1d35f3e6fd49-0-removebg-preview.png" alt="Login" class="vs">
-        <p style="margin-top: 45px;"><b>Java + MySQL Login System --</b> Developed a secure login system with database integration.</p>
+  <h1 style="text-align: center; background-color: lightgrey;"><b>About Me</b></h1>
+
+  <div class="discs">
+    <div>
+      <img src="mypic.jpg" width="250" height="350">
     </div>
-
-    <div style="display: flex; margin-left: 400px; flex-wrap: wrap; justify-content: center;">
-        <img src="web-removebg-preview.png" alt="Login" class="vs">
-        <p style="margin-top: 45px;"><b>Personal Portfolio Website --</b> Created a responsive portfolio to showcase my work and skills.</p>
+    <div class="first">
+      <h2 style="background-color: yellow; display: inline;">SELF INTRODUCTION :</h2>
+      <p>
+        My Name is Seravath Dhoni Nayak I am From Wanaparthy District And I am Currently Studying
+        Diploma 5th semester in Computer Science Engineering At Jaya Prakash Narayana Collage Of Engineering in
+        Mahabubnagar. My Hobbies Are Playing games , Listening Songs , Watching Movies and Reading Books etc..,
+      </p>
+      <h2 style="background-color: yellow; display: inline;">INSTRESTED ACTIVITIES :</h2>
+      <p>
+        I have Intrested In Programming Languages Like C , C++ , JAVA , Python and Web Technogologies.
+        Other Circular Activities such as Painting , Games ( Outdoor games Like Kabaddi , Cricket , FootBall etc..,).
+      </p>
     </div>
+  </div>
 
-    <h1 style="text-align: center; background-color: lightgrey;">Education</h1>
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; text-align: center;">
-        <img src="edu-removebg-preview.png" alt="education" class="edu">
-        <p style="margin-top: 20px; color: aqua;">
-            Education Diploma in Computer Science Engineering (Ongoing, 5th Semester — Expected Completion: 2026)
-            Jayaprakash Narayan College of Engineering — Telangana State SBTET.
-        </p>
+  <h1 style="text-align: center; background-color: lightgrey;">Skills</h1>
+
+  <div class="skills-container">
+    <div class="skills-content">
+      <h2 style="color: black; background-color: grey; display: inline;">Programming Languages :</h2>
+      <p>I have Knownledge on Programming Languages Like C , C++ , Java , HTML , CSS and MySQL.</p>
+      <img src="c.png" alt="C" class="logo">
+      <img src="ja-removebg-preview.png" alt="C++" class="logoo">
+      <img src="java-removebg-preview.png" alt="JAVA" class="logo">
+      <img src="html.png" alt="HTML" class="logo">
+      <img src="css.svg" alt="CSS" class="logo">
+      <img src="mysql-removebg-preview.png" alt="MySQL" class="logo">
+
+      <h2 style="background-color: grey; display: inline;">Tools & Platforms :</h2>
+      <p>I have worked With Git , VS CODE , Apache Tomcat.</p>
+      <img src="git.png" alt="Git" class="logo">
+      <img src="vs.png" alt="VS CODE" class="logo">
+      <img src="apache.png" alt="Apache Tomcat" class="logo">
+
+      <h2 style="background-color: grey; display: inline;">Other Skills :</h2>
+      <p>Problem-solving , Teamwork, adaptability</p>
+      <img src="ps.png" alt="problem-solving" class="logo">
+      <img src="team-removebg-preview.png" alt="teamwork" class="logo">
+      <img src="adp.png" alt="adaptability" class="logo">
     </div>
-
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; text-align: center;">
-        <div class="col">
-            <img src="svgs.jpeg" alt="svgs" class="im">
-            <p><b><span style="color: black; background-color: rgb(245, 9, 9);">SV Global Services (SVGS) Certificate --</span></b><br>
-                I received this certificate after completing my training at SV Global Services.</p>
-        </div>
-        <div class="col">
-            <img src="google.jpg" alt="Google" class="imgs">
-            <p><b><span style="color: black; background-color: rgb(245, 9, 9);">Google Certificate --</span></b><br>
-                I earned this certificate by successfully completing a Google training program.</p>
-        </div>
+    <div class="skills-logo">
+      <img src="bus-removebg-preview.png" alt="skills" class="logos">
     </div>
+  </div>
 
-    <footer>
-        <img src="copy.png" width="20" height="20" class="super">
-        <h2>Contact Me</h2>
-        <h4>Email : dhoniseravath0134@gmail.com</h4>
-        <h4>Phone no : 7386140829</h4>
-    </footer>
+  <h1 style="text-align: center; background-color: lightgrey;">Projects</h1>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+    <div style="text-align:center;">
+      <img src="4399c257-2647-447b-a65a-1d35f3e6fd49-0-removebg-preview.png" alt="Login" class="vs">
+      <p><b>Java + MySQL Login System --</b> Developed a secure login system with database integration.</p>
+    </div>
+    <div style="text-align:center;">
+      <img src="web-removebg-preview.png" alt="Login" class="vs">
+      <p><b>Personal Portfolio Website --</b> Created a responsive portfolio to showcase my work and skills.</p>
+    </div>
+  </div>
+
+  <h1 style="text-align: center; background-color: lightgrey;">Education</h1>
+  <div style="text-align: center;">
+    <img src="edu-removebg-preview.png" alt="education" class="edu">
+    <p style="color: aqua;">
+      Education Diploma in Computer Science Engineering (Ongoing, 5th Semester — Expected Completion: 2026)
+      Jayaprakash Narayan College of Engineering — Telangana State SBTET.
+      Learned fundamentals of programming, databases, and operating systems.
+      Worked on academic projects involving Java and MySQL integration.
+      Gaining practical skills in web development with HTML, CSS, and JavaScript basics.
+    </p>
+  </div>
+
+  <div class="col">
+    <img src="svgs.jpeg" alt="svgs" class="im">
+    <p><b><span style="color: black; background-color: rgb(245, 9, 9);">SV Global Services (SVGS) Certificate --</span></b><br>
+      I received this certificate after completing my training at SV Global Services. During this program, I gained practical
+      knowledge of industry-relevant concepts and enhanced my technical skills through hands-on practice.
+    </p>
+  </div>
+
+  <div class="col">
+    <img src="google.jpg" alt="Google" class="imgs">
+    <p><b><span style="color: black; background-color: rgb(245, 9, 9);">Google Certificate --</span></b><br>
+      I earned this certificate by successfully completing a Google training program.
+    </p>
+  </div>
+
+  <footer>
+    <img src="copy.png" width="20" height="20" class="super">
+    <h2>Contact Me</h2>
+    <h4>Email : dhoniseravath0134@gmail.com</h4>
+    <h4>Phone no : 7386140829</h4>
+  </footer>
 </body>
 </html>
